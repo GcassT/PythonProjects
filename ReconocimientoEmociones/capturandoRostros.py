@@ -2,12 +2,12 @@ import cv2
 import os
 import imutils
 
-emotionName = 'Enojo'
+#emotionName = 'Enojo'
 #emotionName = 'Felicidad'
 #emotionName = 'Sorpresa'
-#emotionName = 'Tristeza'
+emotionName = 'Tristeza'
 
-dataPath = r'C:\Users\JANUS\OneDrive\Documentos\ReconocimientoEmociones\data' #Cambia a la ruta donde hayas almacenado Data
+dataPath = r'C:\Users\JANUS\OneDrive\Documentos\GitHub\PythonProjects\ReconocimientoEmociones\data' #Cambia a la ruta donde hayas almacenado Data
 emotionsPath = dataPath + '/' + emotionName
 
 if not os.path.exists(emotionsPath):
