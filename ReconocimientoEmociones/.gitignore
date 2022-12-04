@@ -10,4 +10,7 @@ modeloEigenFaces.xml
 modeloFisherFaces.xml
 modeloLBPH.xml
 
+#Para ignorar el archivo data
+data/
+
 
