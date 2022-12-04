@@ -11,9 +11,9 @@ def emotionImage(emotion):
 	return image
 
 # ----------- Métodos usados para el entrenamiento y lectura del modelo ----------
-#method = 'EigenFaces'
+method = 'EigenFaces'
 #method = 'FisherFaces'
-method = 'LBPH'
+#method = 'LBPH'
 
 if method == 'EigenFaces': emotion_recognizer = cv2.face.EigenFaceRecognizer_create()
 if method == 'FisherFaces': emotion_recognizer = cv2.face.FisherFaceRecognizer_create()
@@ -22,11 +22,13 @@ if method == 'LBPH': emotion_recognizer = cv2.face.LBPHFaceRecognizer_create()
 emotion_recognizer.read('modelo'+method+'.xml')
 # --------------------------------------------------------------------------------
 
-dataPath = '.../Reconocimiento Emociones/Data' #Cambia a la ruta donde hayas almacenado Data
+dataPath = r'C:\Users\JANUS\OneDrive\Documentos\GitHub\PythonProjects\ReconocimientoEmociones\data' #Cambia a la ruta donde hayas almacenado Data
 imagePaths = os.listdir(dataPath)
 print('imagePaths=',imagePaths)
 
-cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
+cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)#Si cuentas con una webcam externa 
+#cap = cv2.VideoCapture('pruebaEmociones.mp4')#Si no cuentas con webcam
+
 
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
 

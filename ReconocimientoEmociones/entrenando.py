@@ -18,9 +18,9 @@ def obtenerModelo(method,facesData,labels):
 	# Almacenando el modelo obtenido
 	emotion_recognizer.write("modelo"+method+".xml")
 
-dataPath = r'C:\Users\JANUS\OneDrive\Documentos\ReconocimientoEmociones\data' #Cambia a la ruta donde hayas almacenado Data
+dataPath = r'C:\Users\JANUS\OneDrive\Documentos\GitHub\PythonProjects\ReconocimientoEmociones\data' #Cambia a la ruta donde hayas almacenado Data
 emotionsList = os.listdir(dataPath)
-print('Lista de personas: ', emotionsList)
+print('Lista de emociones: ', emotionsList)
 
 labels = []
 facesData = []

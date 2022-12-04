@@ -15,7 +15,7 @@ if not os.path.exists(emotionsPath):
 	os.makedirs(emotionsPath)
 
 #cap = cv2.VideoCapture(0,cv2.CAP_DSHOW) #si tiene cámara utilizar este
-cap = cv2.VideoCapture('Video.mp4') #si no tiene cámara utilizar este 
+cap = cv2.VideoCapture('tristeza.mp4') #si no tiene cámara utilizar este 
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
 count = 0
 

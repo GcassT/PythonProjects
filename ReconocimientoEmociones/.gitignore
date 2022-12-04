@@ -1,0 +1,13 @@
+#Para ignorar mis videos, en cada prueba la persona que lo utilice debe añadir sus videos
+Enojo.mp4
+Felicidad.mp4
+pruebaEmociones.mp4
+Sorpresa.mp4
+Tristeza.mp4
+
+#Para ignorar los modelos de reconocimiento facial, en cada prueba la persona que lo utilice debe añadir sus modelos
+modeloEigenFaces.xml
+modeloFisherFaces.xml
+modeloLBPH.xml
+
+
